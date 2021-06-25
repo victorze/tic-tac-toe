@@ -56,7 +56,6 @@
         (if (not (nil? position))
           (def squares (assoc squares position (if x-is-next? "X" "O"))))
         (show-board squares)
-        (prn squares)
         (let [winner (calculate-winner)]
           (if (nil? winner)
             (if (= (count squares) 9)

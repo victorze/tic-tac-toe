@@ -2,11 +2,8 @@
 
 Tic Tac Toe console app
 
-## Clone
-
-    $ git clone https://github.com/victorze/tic-tac-toe
-
 ## Usage
 
+    $ git clone https://github.com/victorze/tic-tac-toe
     $ cd tic-tac-toe
     $ lein run
