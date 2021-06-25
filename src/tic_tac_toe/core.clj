@@ -59,10 +59,10 @@
         (let [winner (calculate-winner)]
           (if (nil? winner)
             (if (= (count squares) 9)
-              (do (println (str "\n*** XO DRAW! ***"))
+              (do (println "\n*** XO DRAW! ***")
                   (recur true nil))
               (if (nil? position)
                 (recur false x-is-next?)
                 (recur false (not x-is-next?))))
-            (do (println (str "\n*** " winner " WINNER! ***"))
+            (do (printf "\n*** %s WINNER! ***%n" winner)
                 (recur true nil))))))))
